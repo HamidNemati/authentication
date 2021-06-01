@@ -1,0 +1,22 @@
+<head>
+    <title>
+        Login page
+    </title>
+
+</head>
+<body>
+    <div name="Sign in">
+        <form method="POST">
+            <input name="username" id="username" placeholder="Enter username">
+            <input name="password" id="password" placeholder="Enter password">
+            <input name="email" id="email" placeholder="Enter email">
+            <input name="age" id="age" placeholder="Enter age">
+            <button type="submit" id="submit">log in</button>
+        </form>
+        {%if (username_check == False)%}
+        <div>
+            <b>This Username Is Not Available!</b>
+            <b>Please Try Another!</b>
+        {%endif%}
+    </div>
+</body>

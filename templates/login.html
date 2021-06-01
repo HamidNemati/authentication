@@ -1,0 +1,20 @@
+<head>
+    <title>
+        Login page
+    </title>
+
+</head>
+<body>
+    <div name="Login">
+        <form action="/login_check">
+            <input name="username" id="username" placeholder="Enter username">
+            <input name="password" id="password" placeholder="Enter password">
+            <button type="submit" id="submit">log in</button>
+        </form>
+        {%if (last_tried == False)%}
+        <div>
+            <b>Wrong Username Or Password!</b>
+            <b>Please Try Again!</b>
+        {%endif%}
+    </div>
+</body>
